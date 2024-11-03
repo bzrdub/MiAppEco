@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Aplicación Sostenible</title>
+</head>
+<body>
+    <div class="app">
+        <h1>Aplicación Sostenible</h1>
+
+        <section id="perfil">
+            <h2>Perfil</h2>
+            <form id="formPerfil">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                <button type="submit">Crear Perfil</button>
+            </form>
+            <p id="mensajePerfil"></p>
+        </section>
+
+        <section id="consejos">
+            <h2>Consejos Sostenibles</h2>
+            <ul id="listaConsejos"></ul>
+            <button id="agregarConsejo">Agregar Consejo</button>
+        </section>
+
+        <section id="calculadoraImpacto">
+            <h2>Calculadora de Impacto</h2>
+            <button id="calcularImpacto">Calcular Impacto</button>
+            <p id="resultadoImpacto"></p>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos Educativos</h2>
+            <ul id="listaRecursos">
+                <li><a href="https://www.concur.cl/blog/article/practicas-de-sostenibilidad-empresarial-para-impulsar-tu-negocio" target="_blank">Prácticas de Sostenibilidad Empresarial</a></li>
+                <li><a href="https://unesdoc.unesco.org/ark:/48223/pf0000386147_spa" target="_blank">Recursos de Educación sobre Sostenibilidad</a></li>
+            </ul>
+        </section>
+
+        <section id="registroActividades">
+            <h2>Registro de Actividades</h2>
+            <form id="formActividad">
+                <label for="actividad">Actividad:</label>
+                <input type="text" id="actividad" placeholder="Describe tu actividad" required>
+                <button type="submit">Registrar Actividad</button>
+            </form>
+            <ul id="listaActividades"></ul>
+        </section>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
